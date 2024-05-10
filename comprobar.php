@@ -73,6 +73,10 @@ mysqli_close($conexion);
 
 ?>
 
+<form action="alta.html" method="get">
+      <input type="submit" value="Altas" name="alta">
+</form>
+
 
 
 </body>
