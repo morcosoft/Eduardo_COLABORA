@@ -14,8 +14,8 @@
     $clave= filter_var($_POST['clave'], FILTER_SANITIZE_SPECIAL_CHARS);
     $nya = filter_var($_POST['nya'], FILTER_SANITIZE_SPECIAL_CHARS);
 
-    //Conecta con el servidor (en versiones anteriores la clave de root era ""):
-$conexion=mysqli_connect("localhost","root","Sepecam2020-21");
+    
+$conexion = mysqli_connect("localhost", "root", "");
 if (!$conexion){
 	echo "ERROR: Imposible establecer conexión con la base de datos para ese usuario y esa clave.<br>\n";
 }else{
